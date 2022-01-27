@@ -1,9 +1,7 @@
-/* colorworks
-A library of routines to help work with colors in other colorspaces than RGB.
+/* hsl
+A library of routines to help to convert RGB to and from HSL
 */
-package colorworks
-
-import "fmt"
+package hsl
 
 // RGBtoHSL : Convert RGB to HSL
 // rgb values are 0-255
@@ -85,8 +83,6 @@ func HSLtoRGB(h, s, l float64) (r, g, b uint8) {
 	}
 
 	t2 := 2*l - t1
-
-	fmt.Println("t1 t2", t1, t2)
 
 	h /= 360.0
 

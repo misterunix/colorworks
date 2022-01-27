@@ -1,4 +1,4 @@
-package colorworks
+package hsl
 
 import (
 	"math"
